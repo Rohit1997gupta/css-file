@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .container{
+        border: 6px solid rgb(8, 7, 8);
+           display: flex; 
+          height: 800px;
+          align-items: flex-start;
+    }
+    .item{
+        color: wheat;
+         padding: 24px;  
+          font-size: 16px;  
+          text-align: center;  
+          /* ==========================  */
+          /* (flex-basis bhi fles-grow ki hi tarh kam karta hai) */
+          flex-basis: 200px; 
+    }
+
+    .first{
+        /* flex-basis:500; */
+        background-color: blue;
+        
+    }
+    .second{
+        background-color:red;
+    }
+    .third{
+        background-color:olive;
+    }
+    .four{
+        
+        background-color:yellowgreen;
+
+    }
+    .five{
+    
+        background-color: green;
+    }
+    .six{
+        background-color: bisque;
+    }
+    .seven{
+        background-color: blueviolet;
+    }
+    .eight{
+        background-color: darkgreen;
+    }
+    
+</style>
+<body>
+    <div class="container">
+    <div class="item first ">hello world1 i know ur </div>
+    <div class="item second">hello world2</div>
+    <div class="item third">hellowworld3</div>
+    <div class="item four">hellowworld4</div>
+    <div class="item five">hellowworld5 </div>
+    <div class="item six">hellowworld6</div>
+    <!-- <div class="item seven">hellowworld7</div> -->
+    <!-- <div class="item feight">hellowworld8</div> -->
+    </div>
+</body>
+</html>

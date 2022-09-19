@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="textItem">
+        <input type="button" id="button" value="add" onclick="onadd()"><br/>
+        <span id="erro"></span>
+        <div id="box"></div>
+    </div>
+
+    <script>
+   function onadd(){
+    document.getElementById("erro").innerHTML="";
+    let item=document.getElementById("textItem").value;
+    if(item==""){
+        document.getElementById("erro").innerHTML="Enter your Item";
+    }else{
+        let box=document.getElementById("box");
+        let li=document.createElement("li");
+        li.textContent=item;
+        box.appendChild(li);
+    }
+    document.getElementById("textItem").value="";
+    
+   }
+    </script>
+</body>
+</html>
